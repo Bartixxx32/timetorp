@@ -25,7 +25,7 @@ Config.Animations = {
 		label = 'Salutations',
 		items = {
 	    {label = "Salut", type = "anim", data = {lib = "gestures@m@standing@casual", anim = "gesture_hello"}},
-	    {label = "Uscisnac dlonie", type = "anim", data = {lib = "mp_common", anim = "givetake1_a"}},
+	    {label = "Uscisnac dlon", type = "anim", data = {lib = "mp_common", anim = "givetake1_a"}},
 	    {label = "szek", type = "anim", data = {lib = "mp_ped_interaction", anim = "handshake_guy_a"}},
 	    {label = "czesc gangstrze", type = "anim", data = {lib = "mp_ped_interaction", anim = "hugs_guy_a"}},
 	    {label = "Salut wojskowy", type = "anim", data = {lib = "mp_player_int_uppersalute", anim = "mp_player_int_salute"}},
