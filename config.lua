@@ -53,7 +53,7 @@ Config.Animations = {
 	    {label = "rob notatki", type = "scenario", data = {anim = "WORLD_HUMAN_CLIPBOARD"}},
 	    {label = "bicie mlotkiem", type = "scenario", data = {anim = "WORLD_HUMAN_HAMMERING"}},
 	    {label = "rundka", type = "scenario", data = {anim = "WORLD_HUMAN_BUM_FREEWAY"}},
-	    {label = "posag", type = "scenario", data = {anim = "WORLD_HUMAN_HUMAN_STATUE"}},
+	    {label = "udawaj posag", type = "scenario", data = {anim = "WORLD_HUMAN_HUMAN_STATUE"}},
 		}
 	},
 
