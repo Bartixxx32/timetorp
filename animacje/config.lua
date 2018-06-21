@@ -3,7 +3,7 @@ Config = {}
 Config.Animations = {
 	
 	{
-		name  = 'festives',
+		name  = 'impreza'
 		label = 'Festives',
 		items = {
 	    {label = "pal papierosa", type = "scenario", data = {anim = "WORLD_HUMAN_SMOKING"}},
@@ -21,7 +21,7 @@ Config.Animations = {
 	},
 
 	{
-		name  = 'greetings',
+		name  = 'powitania',
 		label = 'Salutations',
 		items = {
 	    {label = "Salut", type = "anim", data = {lib = "gestures@m@standing@casual", anim = "gesture_hello"}},
@@ -33,7 +33,7 @@ Config.Animations = {
 	},
 
 	{
-		name  = 'work',
+		name  = 'praca',
 		label = 'Travail',
 		items = {
 	    {label = "idz na policje", type = "anim", data = {lib = "random@arrests@busted", anim = "idle_c"}},
@@ -58,7 +58,7 @@ Config.Animations = {
 	},
 
 	{
-		name  = 'humors',
+		name  = 'humor',
 		label = 'Humeurs',
 		items = {
 	    {label = "klaskanie", type = "scenario", data = {anim = "WORLD_HUMAN_CHEERING"}},
@@ -84,7 +84,7 @@ Config.Animations = {
 	},
 
 	{
-		name  = 'sports',
+		name  = 'sport',
 		label = 'Sports',
 		items = {
 	    {label = "prezentacjia miesni", type = "anim", data = {lib = "amb@world_human_muscle_flex@arms_at_side@base", anim = "base"}},
@@ -96,24 +96,24 @@ Config.Animations = {
 	},
 
 	{
-		name  = 'misc',
+		name  = 'inne',
 		label = 'Divers',
 		items = {
-	    {label = "Boire un café", type = "anim", data = {lib = "amb@world_human_aa_coffee@idle_a", anim = "idle_a"}},
-	    {label = "S'asseoir", type = "anim", data = {lib = "anim@heists@prison_heistunfinished_biztarget_idle", anim = "target_idle"}},
-	    {label = "Attendre contre un mur", type = "scenario", data = {anim = "world_human_leaning"}},
-	    {label = "Couché sur le dos", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE_BACK"}},
-	    {label = "Couché sur le ventre", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE"}},
-	    {label = "Nettoyer quelque chose", type = "scenario", data = {anim = "world_human_maid_clean"}},
-	    {label = "Préparer à manger", type = "scenario", data = {anim = "PROP_HUMAN_BBQ"}},
-	    {label = "Position de Fouille", type = "anim", data = {lib = "mini@prostitutes@sexlow_veh", anim = "low_car_bj_to_prop_female"}},
-	    {label = "Prendre un selfie", type = "scenario", data = {anim = "world_human_tourist_mobile"}},
-	    {label = "Ecouter à une porte", type = "anim", data = {lib = "mini@safe_cracking", anim = "idle_base"}}, 
+	    {label = "pij kawe", type = "anim", data = {lib = "amb@world_human_aa_coffee@idle_a", anim = "idle_a"}},
+	    {label = "usiadz", type = "anim", data = {lib = "anim@heists@prison_heistunfinished_biztarget_idle", anim = "target_idle"}},
+	    {label = "oprzyj sie", type = "scenario", data = {anim = "world_human_leaning"}},
+	    {label = "lezenie na plecach", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE_BACK"}},
+	    {label = "lezenie na brzuchu", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE"}},
+	    {label = "czysc", type = "scenario", data = {anim = "world_human_maid_clean"}},
+	    {label = "przygotowywanie sie do jedzenia", type = "scenario", data = {anim = "PROP_HUMAN_BBQ"}},
+	    {label = "Wyszukaj pozycję", type = "anim", data = {lib = "mini@prostitutes@sexlow_veh", anim = "low_car_bj_to_prop_female"}},
+	    {label = "rob selfie", type = "scenario", data = {anim = "world_human_tourist_mobile"}},
+	    {label = "podsłuchuj", type = "anim", data = {lib = "mini@safe_cracking", anim = "idle_base"}}, 
 		}
 	},
 
 	{
-		name  = 'attitudem',
+		name  = 'postawy',
 		label = 'Attitudes',
 		items = {
 	    {label = "Normal M", type = "attitude", data = {lib = "move_m@confident", anim = "move_m@confident"}},
