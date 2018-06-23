@@ -1,5 +1,5 @@
 Locales['de'] = {
-	['cloakroom']				= 'szafka',
+	['cloakroom']				= 'szatnia',
 	['job_wear']				= 'odziez robocza',
 	['citizen_wear']			= 'odziez cywilna',
 	['vehiclespawner']			= 'wyciagnij pojazd', 
