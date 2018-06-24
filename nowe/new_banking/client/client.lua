@@ -119,7 +119,7 @@ if bankMenu then
   while true do
     Wait(0)
 	if nearBank() or nearATM() then
-			DisplayHelpText("Press ~INPUT_PICKUP~ to access the bank ~b~")
+			DisplayHelpText("Nacisnij ~INPUT_PICKUP~ aby otworzyc menu banku ~b~")
 	
 		if IsControlJustPressed(1, 38) then
 			inMenu = true
@@ -133,7 +133,7 @@ if bankMenu then
     if IsControlJustPressed(1, 322) then
 	  inMenu = false
       SetNuiFocus(false, false)
-      SendNUIMessage({type = 'close'})
+      SendNUIMessage({type = 'zamknij'})
     end
 	end
   end)
@@ -176,21 +176,21 @@ end)
 --===============================================
 --==           Deposit Event                   ==
 --===============================================
-RegisterNUICallback('deposit', function(data)
+RegisterNUICallback('wplac', function(data)
 	TriggerServerEvent('bank:deposit', tonumber(data.amount))
 end)
 
 --===============================================
 --==          Withdraw Event                   ==
 --===============================================
-RegisterNUICallback('withdrawl', function(data)
+RegisterNUICallback('wyplac', function(data)
 	TriggerServerEvent('bank:withdraw', tonumber(data.amountw))
 end)
 
 --===============================================
 --==         Balance Event                     ==
 --===============================================
-RegisterNUICallback('balance', function()
+RegisterNUICallback('balans', function()
 	TriggerServerEvent('bank:balance')
 end)
 
@@ -205,7 +205,7 @@ end)
 --===============================================
 --==         Transfer Event                    ==
 --===============================================
-RegisterNUICallback('transfer', function(data)
+RegisterNUICallback('transakcjia', function(data)
 	TriggerServerEvent('bank:transfer', data.to, data.amountt)
 	
 end)
