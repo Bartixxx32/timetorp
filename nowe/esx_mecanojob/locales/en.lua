@@ -1,5 +1,5 @@
 Locales['en'] = {
-  ['mechanic']                  = 'mechamik',
+  ['mechanic']                  = 'mechanik',
   ['drive_to_indicated']        = '~y~jedz~s~ w wyznaczone miejsce',
   ['mission_canceled']          = 'misja ~r~anulowana~s~',
   ['vehicle_list']              = 'losta pojazdow',
