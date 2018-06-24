@@ -18,7 +18,7 @@ function drawLevel(r, g, b, a)
   SetTextDropShadow()
   SetTextOutline()
   SetTextEntry("STRING")
-  AddTextComponentString("~y~Voice:~s~ " .. voice.level)
+  AddTextComponentString("~y~Glos:~s~ " .. voice.level)
   DrawText(0.175, 0.92)
 end
 
@@ -39,21 +39,21 @@ Citizen.CreateThread(function()
       voice.current = (voice.current + 1) % 3
       if voice.current == 0 then
         NetworkSetTalkerProximity(voice.default)
-        voice.level = "Normal"
+        voice.level = "Normalny"
       elseif voice.current == 1 then
         NetworkSetTalkerProximity(voice.shout)
-        voice.level = "Shout"
+        voice.level = "krzyk"
       elseif voice.current == 2 then
         NetworkSetTalkerProximity(voice.whisper)
-        voice.level = "Whisper"
+        voice.level = "szept"
       end
     end
     if voice.current == 0 then
-      voice.level = "Normal"
+      voice.level = "normalny"
     elseif voice.current == 1 then
-      voice.level = "Shout"
+      voice.level = "krzyk"
     elseif voice.current == 2 then
-      voice.level = "Whisper"
+      voice.level = "szept"
     end
     if NetworkIsPlayerTalking(PlayerId()) then
       drawLevel(41, 128, 185, 255)
@@ -67,12 +67,12 @@ function setVoice()
       voice.current = (voice.current + 1) % 3
       if voice.current == 0 then
         NetworkSetTalkerProximity(voice.default)
-        voice.level = "Normal"
+        voice.level = "Normalny"
       elseif voice.current == 1 then
         NetworkSetTalkerProximity(voice.shout)
-        voice.level = "Shout"
+        voice.level = "krzyk"
       elseif voice.current == 2 then
         NetworkSetTalkerProximity(voice.whisper)
-        voice.level = "Whisper"
+        voice.level = "szept"
       end
 end

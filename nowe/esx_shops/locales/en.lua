@@ -1,9 +1,9 @@
 Locales['en'] = {
 
-	['shop'] = 'shop',
-	['shops'] = 'shops',
-	['press_menu'] = 'press ~INPUT_CONTEXT~ to access the store.',
-	['bought'] = 'you bought ~b~1x ',
-	['not_enough'] = 'you do not ~r~have enough~s~ money.'
+	['shop'] = 'sklep',
+	['shops'] = 'sklepy',
+	['press_menu'] = 'nacisnij ~INPUT_CONTEXT~ aby zrobic zakupy.',
+	['bought'] = 'kupiles ~b~1x ',
+	['not_enough'] = 'nie masz ~r~wystarczajaco~s~ pieniedzy.'
 
 }
