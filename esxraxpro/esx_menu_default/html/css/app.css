@@ -65,11 +65,12 @@
   transform: translate(-50%, -50%); 
 }
 
-.menu .head {
-  background-color: #e08417;
-  text-align      : center;
-  height          : 40px;
-  line-height     : 40px;
+ .menu .head {
+-  background-color: #506be6;
++  background-color: #e08417;
+   text-align      : center;
+   height          : 40px;
+   line-height     : 40px;
 }
 
 .menu .menu-items {

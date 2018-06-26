@@ -1,24 +1,37 @@
 ESX = nil
-local occupied = {}
+
+local SeatsTaken = {}
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-
-RegisterServerEvent('sit:occupyObj')
-AddEventHandler('sit:occupyObj', function(object)
-	table.insert(occupied, object)
+-- SEATS
+RegisterServerEvent('esx_interact:takePlace')
+AddEventHandler('esx_interact:takePlace', function(object)
+	table.insert(SeatsTaken, object)
 end)
 
-RegisterServerEvent('sit:unoccupyObj')
-AddEventHandler('sit:unoccupyObj', function(object)
-	for k,v in pairs(occupied) do
-		if v == object then
-			table.remove(occupied, k)
+RegisterServerEvent('esx_interact:leavePlace')
+AddEventHandler('esx_interact:leavePlace', function(object)
+
+	local _SeatsTaken = {}
+
+	for i=1, #SeatsTaken, 1 do
+		if object ~= SeatsTaken[i] then
+			table.insert(_SeatsTaken, SeatsTaken[i])
 		end
 	end
-	end)
 
+	SeatsTaken = _SeatsTaken
+	
+end)
 
-ESX.RegisterServerCallback('sit:getOccupied', function(source, cb)
-	cb(occupied)
+ESX.RegisterServerCallback('esx_interact:getPlace', function(source, cb, id)
+	local found = false
+
+	for i=1, #SeatsTaken, 1 do
+		if SeatsTaken[i] == id then
+			found = true
+		end
+	end
+	cb(found)
 end)

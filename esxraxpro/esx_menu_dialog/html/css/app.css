@@ -51,13 +51,14 @@
 
 .dialog.big {
   height: 200px;
-}
-
-.dialog .head {
-  background-color: #e08417;
-  text-align      : center;
-  height          : 40px;
-}
+ }
+ 
+ .dialog .head {
+-  background-color: #506be6;
++  background-color: #e08417;
+   text-align      : center;
+   height          : 40px;
+ }
 
 .dialog .head span:before {
   content: "";

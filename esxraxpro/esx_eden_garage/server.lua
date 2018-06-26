@@ -1,8 +1,6 @@
 RegisterServerEvent('eden_garage:debug')
 RegisterServerEvent('eden_garage:modifystate')
 RegisterServerEvent('eden_garage:pay')
-RegisterServerEvent('eden_garage:payhealth')
-RegisterServerEvent('eden_garage:logging')
 
 
 ESX                = nil
@@ -112,7 +110,7 @@ AddEventHandler('eden_garage:pay', function()
 
 	xPlayer.removeMoney(Config.Price)
 
-	TriggerClientEvent('esx:showNotification', source, 'You paid ' .. Config.Price)
+	TriggerClientEvent('esx:showNotification', source, 'Vous avez payé ' .. Config.Price)
 
 end)
 --Fin fonction qui retire argent
@@ -183,24 +181,3 @@ AddEventHandler('onMySQLReady', function()
 
 end)
 -- Fin Fonction qui change les etats sorti en rentré lors d'un restart
-
-
---debut de payement pour la santé vehicule
-AddEventHandler('eden_garage:payhealth', function(price)
-
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeMoney(price)
-
-	TriggerClientEvent('esx:showNotification', source, 'You paid ' .. price)
-
-end)
---fin de payement pour la santé vehicule
-
-
---logger dans la console
-AddEventHandler('eden_garage:logging', function(logging)
-	RconPrint(logging)
-end)
-
---fin de logger dans la console
